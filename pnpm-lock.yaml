@@ -8,9 +8,9 @@ dependencies:
   preact:
     specifier: ^10.16.0
     version: 10.18.1
-  react-to-webcomponent:
-    specifier: ^2.0.0
-    version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
+  react-router-dom:
+    specifier: ^6.17.0
+    version: 6.17.0(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
   '@preact/preset-vite':
@@ -587,8 +587,9 @@ packages:
       - supports-color
     dev: true
 
-  /@r2wc/core@1.0.1:
-    resolution: {integrity: sha512-3Q/IEvGoJ8E+wy8Y6vo+Hot35z89Ei0Ghr7WAhprxz1LhuCAaA2BIYXY8GjaCvJLGhiOLuiPMWb8DKfbrUzEMg==}
+  /@remix-run/router@1.10.0:
+    resolution: {integrity: sha512-Lm+fYpMfZoEucJ7cMxgt4dYt8jLfbpwRCzAjm9UgSLOkmlqo9gupxt6YX3DY0Fk155NT9l17d/ydi+964uS9Lw==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@rollup/pluginutils@4.2.1:
@@ -1192,15 +1193,27 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-to-webcomponent@2.0.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-/gD0HgmO+yDg1kSfIktq04WlGVglEcun11xNAy8zMnSMtOZ+t6OF0bJVtHlIcT8nGU+XGwycY2t7prOaO+BWXg==}
+  /react-router-dom@6.17.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qWHkkbXQX+6li0COUUPKAUkxjNNqPJuiBd27dVwQGDNsuFBdMbrS6UZ0CLYc4CsbdLYTckn4oB4tGDuPZpPhaQ==}
+    engines: {node: '>=14.0.0'}
     peerDependencies:
-      react: ^16.0.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
+      react: '>=16.8'
+      react-dom: '>=16.8'
     dependencies:
-      '@r2wc/core': 1.0.1
+      '@remix-run/router': 1.10.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+      react-router: 6.17.0(react@18.2.0)
+    dev: false
+
+  /react-router@6.17.0(react@18.2.0):
+    resolution: {integrity: sha512-YJR3OTJzi3zhqeJYADHANCGPUu9J+6fT5GLv82UWRGSxu6oJYCKVmxUcaBQuGm9udpWmPsvpme/CdHumqgsoaA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.10.0
+      react: 18.2.0
     dev: false
 
   /react@18.2.0:

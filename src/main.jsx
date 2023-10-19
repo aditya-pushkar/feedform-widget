@@ -1,8 +1,6 @@
 import { render } from 'preact'
 import { App } from './app.jsx'
 import './index.css'
-// import reactToWebComponent from 'react-to-webcomponent';
+import { BrowserRouter } from "react-router-dom";
 
-render(<App />, document.getElementById('app'))
-
-// const widget = reactToWebComponent(App, React)
+render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('app'))
