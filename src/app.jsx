@@ -28,7 +28,8 @@ export function App(){
 
 
   return (
-       <div data-dial-init className="fixed right-3 bottom-3 z-50">
+      //  <div data-dial-init className="px-3 py-2" style={{position: "fixed", right: 0, bottom: 0}}>
+      <div data-dial-init className="px-3 py-2" style={{position: "fixed", right: 0, bottom: 0}}>
       {showFeedForm && (
         <div className="w-80 flex flex-col border border-neutral shadow-md bg-base-100">
           {showInput ? (
